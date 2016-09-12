@@ -30,14 +30,14 @@ HOUR MINUTE
 
         const time = new HourMinute(twoHours);
         time.subtract(anHourAndAHalf);     // now `time` is 0:30
-        time.add(twoHours);                // now `time` is 1:00
+        time.add(twoHours);                // now `time` is 2:30
 
 - Other convenient method for mutating original value
 
-        time.addMinutes(5);                // now `time` is 1:05
-        time.addHours(1);                  // now `time` is 2:05
-        time.subtractMinutes(5);           // now `time` is 2:00
-        time.subtractHours(1)              // now `time` is 1:00
+        time.addMinutes(5);                // now `time` is 2:35
+        time.addHours(1);                  // now `time` is 3:35
+        time.subtractMinutes(5);           // now `time` is 3:30
+        time.subtractHours(1)              // now `time` is 2:30
 
 - Exporting values
 
