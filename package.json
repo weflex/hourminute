@@ -1,6 +1,6 @@
 {
   "name": "hourminute",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Mini lib to work on {hour, minute} objects",
   "main": "lib/index.js",
   "scripts": {
