@@ -1,0 +1,35 @@
+{
+  "name": "hourminute",
+  "version": "1.0.0",
+  "description": "Mini lib to work on {hour, minute} objects",
+  "main": "lib/index.js",
+  "scripts": {
+    "build": "./node_modules/.bin/tsc @tsconfig.json -d -m commonjs",
+    "prepublish": "npm run typings && npm run build",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "typings": "./node_modules/.bin/typings install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/weflex/hourminute.git"
+  },
+  "keywords": [
+    "Moment",
+    "HourMinute",
+    "Time"
+  ],
+  "author": "Scott Wang",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/weflex/hourminute/issues"
+  },
+  "homepage": "https://github.com/weflex/hourminute#readme",
+  "devDependencies": {
+    "tsc": "^1.20150623.0",
+    "typings": "^1.3.3"
+  },
+  "dependencies": {
+    "moment": "^2.15.0"
+  },
+  "typings": "lib/index.d.ts"
+}
