@@ -31,5 +31,8 @@
   "dependencies": {
     "moment": "^2.15.0"
   },
+  "typescript": {
+    "definition": "lib/index.d.ts"
+  },
   "typings": "lib/index.d.ts"
 }
