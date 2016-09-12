@@ -96,3 +96,7 @@ export class HourMinute implements HourMinuteConvertible {
     this.minute = this._duration.minutes();
   }
 }
+
+export default function (origin: HourMinuteConvertible): HourMinute {
+  return new HourMinute(origin);
+}
