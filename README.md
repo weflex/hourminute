@@ -1,11 +1,9 @@
-HOUR-MINUTE.js
-==============
+HOUR MINUTE
+===========
 
 ## Install
 
-```bash
-npm install hourminute
-```
+        npm install hourminute
 
 Then copy `node_modules/hourminute/lib/index.d.ts` to your typings.
 
