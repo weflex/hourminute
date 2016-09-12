@@ -85,8 +85,12 @@ export class HourMinute implements HourMinuteConvertible {
     return this._duration.asMinutes();
   }
 
+  private zeroFill(num: number): string {
+    return num < 10 ? '0' + num : '' + num;
+  }
+
   format (): string {
-    return this.hour + ':' + this.minute;
+    return  this.zeroFill(this.hour) + ':' + this.zeroFill(this.minute);
   }
 
   // MARK: - private methods
