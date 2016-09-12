@@ -4,11 +4,17 @@ HOUR MINUTE
 ## Install
 
         npm install hourminute
-
-Then copy `node_modules/hourminute/lib/index.d.ts` to your typings.
+        typings install
+        mkdir -p typings/global/hourminute
+        cp node_modules/hourminute/lib/index.d.ts typings/globals/hourminute/
+        echo '/// <reference path="globals/hourminute/index.d.ts" />' >> typings/index.d.ts
 
 
 ## Usage
+
+- Import
+
+        import {HourMinute} from 'hourminute';
 
 - Constructing new HourMinute objects
 
