@@ -86,7 +86,7 @@ export class HourMinute implements HourMinuteConvertible {
   }
 
   format (): string {
-    return this.hour + ':' + this.minute;
+    return moment().hour(this.hour).minute(this.minute).format("HH:mm");
   }
 
   // MARK: - private methods

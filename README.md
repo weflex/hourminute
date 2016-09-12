@@ -54,6 +54,10 @@ For TypeScript projects, you have to do a few more things:
             .add(anHourAndAHalf)
             .addMinutes(30);
 
+- Convert HourMinute to String
+
+        threeHours.format();               // -> "03:00"
+
 
 ## Build from source
 
