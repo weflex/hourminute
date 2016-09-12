@@ -1,9 +1,12 @@
 HOUR MINUTE
 ===========
 
-## Install
+## Installation
 
         npm install hourminute
+
+For TypeScript projects, you have to do a few more things:
+
         typings install
         mkdir -p typings/global/hourminute
         cp node_modules/hourminute/lib/index.d.ts typings/globals/hourminute/
