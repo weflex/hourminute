@@ -2,3 +2,5 @@ node_modules
 lib/*.js
 lib/*.d.ts
 typings
+lib
+yarn-error.log
