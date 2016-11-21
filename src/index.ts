@@ -97,6 +97,6 @@ export class HourMinute implements HourMinuteConvertible {
   }
 }
 
-export default function (origin: HourMinuteConvertible): HourMinute {
+export default function hourminute (origin: HourMinuteConvertible): HourMinute {
   return new HourMinute(origin);
 }
