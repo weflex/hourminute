@@ -17,12 +17,12 @@ For TypeScript projects, you have to do a few more things:
 
 - Import
 
-        import {HourMinute} from 'hourminute';
+        import hourminute from 'hourminute';
 
-- Constructing new HourMinute objects
+- Constructing hourminute objects
 
-        const anHourAndAHalf = new HourMinute({hour: 1, minute: 30});
-        const twoHours = new HourMinute({hour: 2, minute: 0});
+        const anHourAndAHalf = hourminute({hour: 1, minute: 30});
+        const twoHours = hourminute({hour: 2, minute: 0});
 
 - Getting new HourMinute objects by adding or subtracting
 
@@ -31,7 +31,7 @@ For TypeScript projects, you have to do a few more things:
         
 - Mutating the original time
 
-        const time = new HourMinute(twoHours);
+        const time = hourminute(twoHours);
         time.subtract(anHourAndAHalf);     // now `time` is 0:30
         time.add(twoHours);                // now `time` is 2:30
 
@@ -50,7 +50,7 @@ For TypeScript projects, you have to do a few more things:
 
 - Chaining your mutating calls
 
-        const threeHours = new HourMinute({hour: 1, minute: 0})
+        const threeHours = hourminute({hour: 1, minute: 0})
             .add(anHourAndAHalf)
             .addMinutes(30);
 
