@@ -12,7 +12,7 @@ export class HourMinute implements HourMinuteConvertible {
   private _duration: moment.Duration;
 
   constructor (origin: HourMinuteConvertible) {
-    this._duration = moment.duration(origin.hour, 'hours').add(origin.minute, 'minutes');
+    this._duration = moment.duration(origin.hour, "hours").add(origin.minute, "minutes");
     this._justify();
   }
 
@@ -20,8 +20,8 @@ export class HourMinute implements HourMinuteConvertible {
 
   adding (time: HourMinuteConvertible): HourMinute {
     const duration = moment.duration(this._duration);
-    duration.add(time.hour, 'hours');
-    duration.add(time.minute, 'minutes');
+    duration.add(time.hour, "hours");
+    duration.add(time.minute, "minutes");
     return new HourMinute({
       hour: duration.hours(),
       minute: duration.minutes()
@@ -30,8 +30,8 @@ export class HourMinute implements HourMinuteConvertible {
 
   subtracting (time: HourMinuteConvertible): HourMinute {
     const duration = moment.duration(this._duration);
-    duration.subtract(time.minute, 'minutes');
-    duration.subtract(time.hour, 'hours');
+    duration.subtract(time.minute, "minutes");
+    duration.subtract(time.hour, "hours");
     return new HourMinute({
       hour: duration.hours(),
       minute: duration.minutes()
@@ -41,7 +41,7 @@ export class HourMinute implements HourMinuteConvertible {
   // MARK: - mutating manipulation methods
 
   add (time: HourMinuteConvertible): HourMinute {
-    this._duration.add(time.hour, 'hours').add(time.minute, 'minutes');
+    this._duration.add(time.hour, "hours").add(time.minute, "minutes");
     this._justify();
     return this;
   }
@@ -70,7 +70,7 @@ export class HourMinute implements HourMinuteConvertible {
 
   snapToMinutes (perMinutes: number): HourMinute {
     const overhead = this.minute % perMinutes;
-    this._duration.subtract(overhead, 'minutes');
+    this._duration.subtract(overhead, "minutes");
     this._justify();
     return this;
   }
