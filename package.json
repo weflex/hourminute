@@ -1,5 +1,5 @@
 {
-  "name": "hourminute",
+  "name": "@weflex/hourminute",
   "version": "1.1.1",
   "description": "Mini lib to work on {hour, minute} objects",
   "main": "lib/index.js",
@@ -25,7 +25,7 @@
     "HourMinute",
     "Time"
   ],
-  "author": "Scott Wang",
+  "author": "weflex",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/weflex/hourminute/issues"
